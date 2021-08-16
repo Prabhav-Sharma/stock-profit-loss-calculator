@@ -7,7 +7,7 @@ var returnStat = addElement("#return-stat");
 
 var body= addElement("html");
 
-var img = addElement("img")
+var img = addElement("#img")
 
 
 
@@ -39,6 +39,7 @@ btnCalculate.addEventListener("click", function clickHandler(){
     }else{
         returnStat.innerHTML = "Woohoo! you're making a profit of <span class='trial'>₹" + Math.abs(difference)+ "</span>, " + "Profit Percentage: <span class='trial'>" + percentage + "%</span>";
         body.setAttribute("style", "background-color:#FDE68A;")
+        img.setAttribute("style","transform: scaleX(1); ")
     }
     
 

@@ -33,7 +33,7 @@ btnCalculate.addEventListener("click", function clickHandler(){
 
     if(Math.sign(difference) === -1){
 
-        returnStat.innerHTML = "Unfortunately you're making a loss of <span class='trial1'>₹"  + Math.abs(difference)+  "</span>, "  + "Loss Percentage: <span class='trial1'>" + percentage + "% </span>"; 
+        returnStat.innerHTML = "Unfortunately, you're making a loss of <span class='trial1'>₹"  + Math.abs(difference)+  "</span>, "  + "Loss Percentage: <span class='trial1'>" + percentage + "% </span>"; 
         body.setAttribute("style", "background-color:#A1A1AA;")
         img.setAttribute("style","transform: scaleX(-1); ")
     }else{
